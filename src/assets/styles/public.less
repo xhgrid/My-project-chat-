@@ -1,0 +1,1216 @@
+/* 按钮 */
+.btn{
+    width: 338px;
+    height: 44px;
+    margin: 0 auto;
+    line-height: 44px;
+    text-align: center;
+    clear: both;
+    margin-top: 22px;
+}
+.btn span{
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: -webkit-linear-gradient(180deg,#dc3b40 2%,#dc3b40 50%,#db3b40 51%,#d7363b);
+    border-radius: 6px;
+}
+.btn a{
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: red;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 1px 5px #ddd;
+    border-radius: 6px;
+}
+
+// 投注页面列表样式适配
+#adaptationli{
+    font-size:14px !important;
+    height:36px !important;
+    line-height:34px !important;
+}
+
+// pcdd lhc 更多开奖样式 
+.openMore .openPast tr th{
+    font-weight: 400;
+    text-align: center;
+}
+.openMore .openPastPK{
+    width: 100%;
+    color: #777;
+    overflow-x: hidden;
+    box-shadow: 0 4px 6px #cecece;
+    background: #fff;
+}
+.openMore .openPastPK table tr{
+    width: 100%;
+    vertical-align: middle;
+    display: table-row;
+    border-color: inherit;
+}
+.openMore .openPastPK tr th{
+    /* line-height: 52px; */
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    height: 26px;
+}
+.openMore .openPastPK tr th:first-child:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 375px;
+    left: 0;
+    top: 25px;
+    background-image: -webkit-linear-gradient(90deg,#cecece,#cecece 50%,#cecece 0);
+}
+.openMore .openList .item{
+    height: 26px;
+    line-height: 26px;
+}
+.openMore .openList .item span{
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+}
+.openMore .openList .item span:nth-child(2):before{
+    content: "";
+    position: absolute;
+    left: -2.7px;
+    top: 50%;
+    width: 9px;
+    height: 1px;
+    background-image: -webkit-linear-gradient(90deg,#cecece,#cecece 50%,#cecece 0);
+}
+.openMore .openList .item span:nth-child(2):after{
+    content: "";
+    position: absolute;
+    left: 1.3px;
+    top: -6.5px;
+    width: 1px;
+    height: 36px;
+    background-image: -webkit-linear-gradient(0deg,#cecece,#cecece 50%,#cecece 0);
+}
+.openMore .openList .item span em{
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+    color: #ea0808;
+}
+/* 路由过渡动画 */
+.slide-right-enter {
+  opacity: 0;
+  transform: translate3d(-10%, 0, 0);
+}
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate3d(-10%, 0, 0);
+}
+.slide-left-enter {
+  opacity: 0;
+  transform: translate3d(10%, 0, 0);
+}
+.slide-left-leave-active {
+  opacity: 0;
+  transform: translate3d(10%, 0, 0);
+}
+
+/* 版心 */
+#common{
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+// background: #d9d9d9;
+/* 输入框 */
+.publicTab{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    border-color: grey;
+    tr{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        margin-left: 14px;
+        border-bottom: 1px solid #f1f1f1;
+        display: flex;
+        td{
+            width: 74px;
+        }
+        .inputBox{
+            flex: 1;
+            line-height: 44px;
+            position: relative;
+            background: transparent;
+            input{
+                width: 90%;
+                outline: none;
+                border: none;
+                background: transparent;
+                margin-top: 2px;
+            }
+            i{
+                font-size: 20px;
+                position: absolute;
+                top: 3px;
+            }
+            .identify{
+                position: absolute;
+                right: 0;
+            }
+            span{
+                display: inline-block;
+                line-height: 50px;
+            }
+        }
+    }
+    .twoCode{
+        height: 156px;
+        line-height: 152px;
+        .imgCode{
+            display: block;
+            width: 270px;
+            padding-left: 30px;
+            img{
+                width: 130px;
+                margin: 12px;
+            }
+        }
+    }
+}
+.forget{
+    span{
+        display: inline-block;
+        margin-left: 14px;
+        text-align: left;
+        color: #dc2e2e;
+        line-height: 48px;
+        font-size: 14px;
+    }
+}
+.loginBtn{
+    margin-top: 12px;
+}
+
+/* 温馨提示 */
+.tips{
+    width: 340px;
+    padding: 6px;
+    margin: 12px auto 3px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #888;
+}
+
+// 1px下边框线
+.hr1px{
+    margin-left: 5%;
+    height: 1px;
+    transform: scaleY(.5);
+    background: #f1f1f1;
+}
+
+// 黄色文字
+.cgold{
+    color: #f46e00;
+    font-size: 15px;
+}
+
+// 红色边框
+.checked{
+    border-color: #dc3b40 !important;
+}
+
+// 投注选中样式
+.checkedBet{
+    color: #fff !important;
+    background: #dc3b40 !important;
+    border-color: #c92020 !important;
+}
+.activeBet{
+    color: #000 !important;
+    background-color: #fff5b2!important;
+}
+.checkedBet1{
+    border: 1px solid #d82222 !important;
+    background: linear-gradient(180deg,#ff3034 30%,#ea0505) !important;
+}
+.checkedBet2{
+    background: linear-gradient(180deg,#219ffd 30%,#0385e5) !important;
+    border: 1px solid #3990b4 !important;
+}
+.checkedBet3{
+    background: linear-gradient(180deg,#1dd05f 30%,#22a353) !important;
+    border: 1px solid #47b53a !important;
+}
+.checkedBet1 span,.checkedBet2 span,.checkedBet3 span{
+    color: #fff !important;
+}
+// 图标旋转180
+.on .xiala{
+    transform:rotate(180deg);
+}
+.xiala{
+    display: inline-block;
+    transition: .6s;
+    vertical-align: top;
+}
+
+// 底部白色激活样式
+.onfff{
+    color: #fff !important;
+}
+.onfff:after{
+    content: "";
+    height: 3px;
+    width: 70%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+.room{
+    min-height: 100%;
+    // 房间head
+    .publicTop{
+        height: 50px;
+        line-height: 50px;
+        background: #e53333;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        .modeDropdown{
+            p{
+                display: inline-block;
+                font-size: 13px;
+                line-height: 15px;
+                -webkit-transform: translateY(8px);
+            }
+            span{
+                font-size: 15px;
+                display: inline-block;
+                border-radius: 4px;
+                border: 1px solid hsla(0,0%,100%,.5);
+                vertical-align: top;
+                height: 30px;
+                margin: 9px 0;
+                line-height: 30px;
+                padding: 0 6px;
+                i{
+                    color: #f0c930;
+                    margin: 0 0 0 3px; 
+                    font-size: 17px;
+                }
+            }
+        }
+        .back{
+            position: absolute;
+            left: 0px;
+            font-size: 24px;
+            padding: 0 15px;
+        }
+        .lotteryChoice{
+            position: absolute;
+            top: 2px;
+            right: 12px;
+            text-align: right;
+            font-size: 15px;
+            i{
+                font-size: 15px;
+                font-weight: 700;
+                display: inline-block;
+                transition: .6s;
+            }
+            .fix{
+                background: #fff;
+                text-align: center;
+                position: relative;
+                width: 204px;
+                box-shadow: 0 2px 10px #999;
+                margin-right: -12px;
+                margin-top: -1px;
+                font-size: 12px;
+                z-index: 2;
+                a{
+                    color: #333;
+                    display: block;
+                    width: 5.5em;
+                    float: left;
+                }
+                a:first-child:before{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 12px solid hsla(0,0%,100%,.96);
+                    border-left: 12px solid transparent;
+                    right: 0;
+                    top: -9px;
+                }
+            }
+            .fix:before{
+                content: "";
+                display: table;
+            }
+            .fix:after{
+                clear: both;
+                overflow: hidden;
+                content: "";
+                display: table;
+            }
+        }
+        // k3
+        .allPlayMethodK3{
+            width: 100%;
+            background: rgba(0,0,0,.4);
+            position: fixed;
+            top: 50px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            ul{
+                width: 100%;
+                height: 304px;
+                padding: 14px;
+                margin: 0 auto;
+                background: #fbfbfb;
+                text-align: center;
+                overflow: hidden;
+                line-height: 30px;
+                border-radius: 5px;
+                display: block;
+                li{
+                    display: inline-block;
+                    width: 98px;
+                    height: 82px;
+                    padding-top: 4px;
+                    margin: 4px;
+                    border: 1px solid #ddd;
+                    vertical-align: top;
+                    border-radius: 6px;
+                    p{
+                        line-height: 22px;
+                    }
+                    .p0{
+                        color: #444;
+                        font-size: 14px;
+                    }
+                    .p1{
+                        color: #888;
+                        font-size: 12px;
+                    }
+                    .p2{
+                        height: 46px;
+                        color: #888;
+                        width: 103.5%;
+                        position: relative;
+                        .Dice{
+                            width: 21px;
+                            height: 21px;
+                            display: inline-block;
+                            background-size: 200% 600%;
+                            vertical-align: middle;
+                            margin: 0 3px;
+                        }
+                        .Dice1{
+                            background-position: 0 0;
+                        }
+                        .Dice2{
+                            background-position: 0 -100%;
+                        }
+                        .Dice3{
+                            background-position: 0 -200%;
+                        }
+                        .Dice4{
+                            background-position: 0 -300%;
+                        }
+                        .Dice5{
+                            background-position: 0 -400%;
+                        }
+                        .Dice6{
+                            background-position: 0 -500%;
+                        }
+                    }
+                    .p2:before{
+                        left: 32px;
+                    }
+                }
+                li:last-of-type{
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                li:nth-of-type(8){
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                li:first-child{
+                    .p2:before{
+                        content: "+";
+                        position: absolute;
+                        font-size: 12px;
+                        top: 0;
+                        left: 32px;
+                    }
+                    .p2:after{
+                        content: "+";
+                        position: absolute;
+                        font-size: 12px;
+                        top: 0;
+                        right: 34px;
+                    }
+                }
+            }
+        }
+        // PK
+        .allPlayMethodPK{
+            width: 100%;
+            background: rgba(0,0,0,.4);
+            position: fixed;
+            top: 50px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            ul{
+                width: 100%;
+                height: auto;
+                padding: 14px;
+                margin: 0 auto;
+                background: #fbfbfb;
+                text-align: center;
+                overflow: hidden;
+                line-height: 30px;
+                border-radius: 5px;
+                display: block;
+                li{
+                    display: inline-block;
+                    width: 98px;
+                    height: 40px;
+                    // padding-top: 4px;
+                    margin: 4px;
+                    border: 1px solid #ddd;
+                    vertical-align: top;
+                    border-radius: 6px;
+                    .p0{
+                        line-height: 40px;
+                        color: #000;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .selectType{
+        position: fixed;
+        width: 100%;
+        background: #e53333;
+        top: 50px;
+        .ibet,.bet-record{
+            color: #fbb6b6;
+            display: inline-block;
+            width: 25%;
+            font-size: 15px;
+            text-align: center;
+            padding: 9px 0 8px;
+            position: relative;
+        }
+        .lft-money{
+            color: #fff;
+            float: right;
+            width: 30%;
+            margin-right: 8%;
+            text-align: right;
+            display: inline-block;
+            font-size: 15px;
+            padding: 9px 0 8px;
+            .eye{
+                color: #fbb6b6;
+                position: relative;
+            }
+            .eye:after{
+                content: "\e677";
+                font-family: iconfont;
+                font-size: 18px;
+                right: -19px;
+                position: absolute;
+                top: -3px;
+            }
+            .money{
+                text-align: right;
+                margin-right: -12%;
+            }
+        }
+    }
+    .bet{
+        .State{
+            color: #333;
+            border-top: 1px solid #eee;
+            position: fixed;
+            background: #f7f7f7;
+            padding-top: .2px;
+            top: 89px;
+            box-shadow: 0 1px 5px #dfdfdf;
+            left: 0;
+            width: 100%;
+            height: 59px;
+            .timePart{
+                float: left;
+                width: 50%;
+                background: #f7f7f7;
+                text-align: center;
+                position: relative;
+                p{
+                    margin-top: 5px;
+                    font-size: 13px;
+                    height: 15px;
+                    color: #333;
+                    i{
+                        color: #dc3b40;
+                    }
+                }
+                div{
+                    height: 39px;
+                    line-height: 39px;
+                    color: #dc3b40;
+                    font-size: 22px;
+                }
+            }
+            .timePart:after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 9px;
+                height: 39px;
+                width: 1px;
+                background-image: -webkit-linear-gradient(0deg,#dfdfda,#dfdfda 50%,transparent 0);
+            }
+            .timeAndOpen{
+                float: left;
+                width: 50%;
+                background: #f7f7f7;
+                text-align: center;
+                position: relative;
+                p{
+                    margin-top: 5px;
+                    font-size: 13px;
+                    height: 15px;
+                }
+                .issue:after{
+                    content: "\E791";
+                    font-family: iconfont;
+                    margin-left: 3px;
+                    display: inline-block;
+                    color: #666;
+                    font-weight: 700;
+                }
+                .openNumberK3{
+                    height: 39px;
+                    line-height: 39px;
+                    color: #dc3b40;
+                    .Dice{
+                        width: 26px;
+                        height: 26px;
+                        display: inline-block;
+                        background-size: 200% 600%;
+                        vertical-align: middle;
+                    }
+                    .Dice1{
+                        background-position: 0 0;
+                    }
+                    .Dice2{
+                        background-position: 0 -100%;
+                    }
+                    .Dice3{
+                        background-position: 0 -200%;
+                    }
+                    .Dice4{
+                        background-position: 0 -300%;
+                    }
+                    .Dice5{
+                        background-position: 0 -400%;
+                    }
+                    .Dice6{
+                        background-position: 0 -500%;
+                    }
+                }
+                .openNumberPK{
+                    margin-top: 7px;
+                    em{
+                        font-size: 12px;
+                        margin-left: 1px;
+                        color: #fff;
+                        width: 19px;
+                        height: 19px;
+                        line-height: 21px;
+                        border-radius: 50%;
+                        background: #dc3b40;
+                        background: linear-gradient(0deg,#f86469 0,#bf1f24 75%);
+                        background: -webkit-linear-gradient(top,#f86469,#bf1f24 75%);
+                        box-shadow: 0 2.5px 1px #bbb59c;
+                        display: inline-block;
+                        vertical-align: top;
+                        text-align: center;
+                        font-style: inherit;
+                    }
+                }
+                .openNumberPCDD{
+                    margin-top: 7px;
+                    em{
+                        font-size: 12px;
+                        margin-left: 1px;
+                        color: #fff;
+                        width: 19px;
+                        height: 19px;
+                        line-height: 21px;
+                        border-radius: 50%;
+                        // background: #dc3b40;
+                        // background: linear-gradient(0deg,#f86469 0,#bf1f24 75%);
+                        // background: -webkit-linear-gradient(top,#f86469,#bf1f24 75%);
+                        box-shadow: 0 2.5px 1px #bbb59c;
+                        display: inline-block;
+                        vertical-align: top;
+                        text-align: center;
+                        font-style: inherit;
+                    }
+                    .pcddball_0{
+                        background-color: #aaa;
+                    }
+                    .pcddball_1{
+                        background-color: #5cb85c;
+                    }
+                    .pcddball_2{
+                        background-color: #2a74dd;
+                    }
+                        .pcddball_3{
+                        background-color: #d9534f;
+                    }
+                    .pcddball_4{
+                        background-color: #5cb85c;
+                    }
+                    .pcddball_5{
+                        background-color: #2a74dd;
+                    }
+                    .pcddball_6{
+                        background-color: #d9534f;
+                    }
+                        .pcddball_7{
+                    background-color: #5cb85c;
+                    }
+                    .pcddball_8{
+                        background-color: #2a74dd;
+                    }
+                    .pcddball_9{
+                        background-color: #d9534f;
+                    }
+                }
+            }
+            .openMore{
+                margin-top: 50px;
+                // background: rgba(0,0,0,.4);
+                .openPast{
+                    display: block;
+                    height: 27px;
+                    line-height: 27px;
+                    overflow-x: hidden;
+                    background-color: #fff;
+                    width: 100%;
+                    font-size: 14px;
+                    color: #777;
+                    clear: both;
+                    text-align: center;
+                    border-bottom: 1px solid #cecece;
+                    tr:first-of-type{
+                        td:nth-of-type(1){
+                            width: 100px;
+                        }
+                        td:nth-of-type(2){
+                            width: 100px;
+                        }
+                        td:nth-of-type(3){
+                            width: 52px;
+                        }
+                        td:nth-of-type(4){
+                            width: 52px;
+                        }
+                        td:nth-of-type(5){
+                            width: 52px;
+                        }
+                    }
+                }
+                .openList{
+                    display: block;
+                    max-height: 260px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    box-shadow: 0 3px 6px #cecece;
+                    background-color: #fff;
+                    width: 100%;
+                    font-size: 14px;
+                    color: #777;
+                    text-align: center;
+                    clear: both;
+                    -webkit-overflow-scrolling: touch;
+                    tr{
+                        height: 26px;
+                        vertical-align: middle;
+                        td:first-of-type{
+                            width: 100px;
+                            border-right: 1px solid #cecece;
+                        }
+                        td:nth-of-type(2){
+                            width: 100px;
+                            .Dice{
+                                width: 18px;
+                                height: 18px;
+                                display: inline-block;
+                                background-size: 200% 600%;
+                                vertical-align: middle;
+                            }
+                            .Dice1{
+                                background-position: 0 0;
+                            }
+                            .Dice2{
+                                background-position: 0 -100%;
+                            }
+                            .Dice3{
+                                background-position: 0 -200%;
+                            }
+                            .Dice4{
+                                background-position: 0 -300%;
+                            }
+                            .Dice5{
+                                background-position: 0 -400%;
+                            }
+                            .Dice6{
+                                background-position: 0 -500%;
+                            }
+                        }
+                        td:nth-of-type(3){
+                            width: 52px;
+                            .sumValue{
+                                color: #ea0808;
+                            }
+                        }
+                        td:nth-of-type(4){
+                            width: 52px;
+                            .light{
+                                border-radius: 4px;
+                                padding: 1.3px 2.4px;
+                                background: #ff9726;
+                                color: #fff;
+                            }
+                        }
+                        td:nth-of-type(5){
+                            width: 52px;
+                            .lightBlue{
+                                border-radius: 4px;
+                                padding: 1.3px 2.4px;
+                                background: #5691d7;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Main{
+            padding-top: 163px;
+            padding-bottom: 121px;
+            width: 100%;
+            overflow: hidden;
+            background: #fff;
+            .MethodWrap{
+                width: 100%;
+                display: table;
+                .Method{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin: 0 auto;
+                    height: auto;
+                    color: #dc3b40;
+                    -webkit-tap-highlight-color: rgba(255,255,255,0);
+                    .MethodMsg{
+                        font-size: 15px;
+                        height: auto;
+                        line-height: 22px;
+                        padding: 0 34px;
+                        color: #222;
+                        word-break: break-all;
+                        i{
+                            color: red;
+                        }
+                    }
+                    ul{
+                        margin: 7px auto 0;
+                        text-align: center;
+                        li{
+                            vertical-align: top;
+                            display: inline-block;
+                            text-align: center;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                        }
+                    }
+                    .ramp{
+                        li{
+                            line-height: 54px;
+                            padding-top: 0px;
+                        }
+                    }
+                }
+                .MethodK30{
+                    li{
+                        width: 71px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodK31{
+                    li{
+                        width: 71px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodK32{
+                    li{
+                        width: 64px;
+                        padding: 5px 0;
+                        height: 40px;
+                        margin: 21px 19px 0;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+                .MethodK33{
+                    li{
+                        width: 64px;
+                        padding: 5px 0;
+                        height: 40px;
+                        margin: 21px 19px 0;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+                .MethodK34{
+                    li{
+                        width: 64px;
+                        padding: 5px 0;
+                        height: 40px;
+                        margin: 21px 19px 0;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+                .MethodK35{
+                    li{
+                        width: 50px;
+                        padding: 5px 0;
+                        margin: 21px 4px 0;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+                .MethodK36{
+                    li{
+                        width: 64px;
+                        padding: 5px 0;
+                        height: 40px;
+                        margin: 21px 19px 0;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+                .MethodPK0{
+                    li{
+                        width: 71px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodPK1{
+                    li{
+                        width: 61px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodPK2{
+                    li{
+                        width: 61px;
+                        height: 54px;
+                        // padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 54px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            // margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodSSC0{
+                    li{
+                        width: 61px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodSSC1{
+                    li{
+                        width: 71px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+                .MethodSSC2{
+                    li{
+                        width: 61px;
+                        height: 54px;
+                        padding-top: 6px;
+                        overflow: hidden;
+                        margin: 4px 6px;
+                        line-height: 20px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        p{
+                            margin-top: 2px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #444;
+                        }
+                    }
+                }
+            }
+        }
+        .mask-MMC{
+            position: fixed;
+            width: 100%;
+            height: calc(100% - 148px - 54px);
+            background: #000;
+            opacity: .7;
+            left: 0;
+            top: 148px;
+            bottom: 54px;
+            z-index: 997;
+        }
+        .bottom{
+            height: auto;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            z-index: 2;
+            table{
+                width: 100%;
+                background: #fff;
+                color: #000;
+                tbody{
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                    tr{
+                        font-size: 14px;
+                        height: 45px;
+                        line-height: 45px;
+                        display: table-row;
+                        vertical-align: inherit;
+                        border-color: inherit;
+                        display: flex;
+                        td:first-of-type{
+                            text-align: center;
+                            width: 14%;
+                        }
+                        td:nth-of-type(2){
+                            width: 22.5%;
+                            input{
+                                height: 30px;
+                                width: 75px;
+                                border-radius: 5px;
+                                text-align: center;
+                                margin-right: 5px;
+                                outline: none;
+                                margin: 0;
+                                padding: 0;
+                                vertical-align: middle;
+                                -webkit-transform: translateY(1px);
+                                transform: translateY(1px);
+                                border: 1px solid #d2d2d2;
+                            }
+                        }
+                        td:nth-of-type(3){
+                            width: 11%;
+                        }
+                    }
+                    tr:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        -webkit-transform: scaleY(.5);
+                        transform: scaleY(.5);
+                        -webkit-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        background: #ddd;
+                    }
+                }
+            }
+            .betInfo{
+                color: #fff;
+                height: 54px;
+                line-height: 54px;
+                display: flex;
+                .clear{
+                    font-size: 15px;
+                    width: 30%;
+                    text-align: center;
+                    padding-top: 2px;
+                    border-right: 1px solid #222;
+                }
+                p{
+                    width: 40%;
+                    font-size: 15px;
+                    text-align: center;
+                    padding-top: 2px;
+                    i{
+                        color: rgb(255, 163, 25);
+                    }
+                }
+                .confirm{
+                    font-size: 15px;
+                    width: 30%;
+                    text-align: center;
+                    background: #e54042;
+                    padding-top: .145em;
+                }
+            }
+        }
+        bottom:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            background: #c9c9ca;
+            width: 100%;
+            height: 1px;
+            -webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+    }
+    .layermcont{
+        padding: 10px 30px;
+        max-height: 50vh;
+        font-size: 14px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        color: #666;
+        line-height: 22px;
+        border-radius: 5px;
+        span:nth-of-type(1){
+            color: #333;
+        }
+        span:nth-of-type(2){
+            color: red;
+        }
+        span:nth-of-type(3){
+            color: #333;
+        }
+    }
+}

@@ -1,0 +1,616 @@
+    html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        height: 100%;
+        font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Heiti SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        font-size: 14px;
+        font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Heiti SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+        line-height: 1.5;
+        color: #333;
+        /* 　　　　background-color: #fff; */
+        min-height: 100%;
+        background-color: #f6f6f6;
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+        display: block;
+    }
+    
+    audio,
+    canvas,
+    progress,
+    video {
+        display: inline-block;
+    }
+    
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+    
+    progress {
+        vertical-align: baseline;
+    }
+    
+    [hidden],
+    template {
+        display: none;
+    }
+    
+    a {
+        background: transparent;
+        text-decoration: none;
+        color: #08c;
+    }
+    
+    a:active {
+        outline: 0;
+    }
+    
+    abbr[title] {
+        border-bottom: 1px dotted;
+    }
+    
+    b,
+    strong {
+        font-weight: bold;
+    }
+    
+    dfn {
+        font-style: italic;
+    }
+    
+    mark {
+        background: #ff0;
+        color: #000;
+    }
+    
+    small {
+        font-size: 80%;
+    }
+    
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    
+    sup {
+        top: -0.5em;
+    }
+    
+    sub {
+        bottom: -0.25em;
+    }
+    
+    img {
+        max-width: 100%;
+        border: 0;
+        vertical-align: middle;
+    }
+    
+    svg:not(:root) {
+        overflow: hidden;
+    }
+    
+    pre {
+        overflow: auto;
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+    }
+    
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        color: inherit;
+        font: inherit;
+        margin: 0;
+        vertical-align: middle;
+    }
+    
+    button,
+    input,
+    select {
+        overflow: visible;
+    }
+    
+    button,
+    select {
+        text-transform: none;
+    }
+    
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    
+    [disabled] {
+        cursor: default;
+    }
+    
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    
+    input {
+        line-height: normal;
+    }
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+    
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        box-sizing: border-box;
+    }
+    
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+    
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+    }
+    
+    legend {
+        border: 0;
+        padding: 0;
+    }
+    
+    textarea {
+        overflow: auto;
+        resize: vertical;
+        vertical-align: top;
+    }
+    
+    optgroup {
+        font-weight: bold;
+    }
+    
+    input,
+    select,
+    textarea {
+        outline: 0;
+    }
+    
+    textarea,
+    input {
+        -webkit-user-modify: read-write-plaintext-only;
+    }
+    
+    input::-ms-clear,
+    input::-ms-reveal {
+        display: none;
+    }
+    
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+        color: #999;
+    }
+    
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #999;
+    }
+    
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #999;
+    }
+    
+    .placeholder {
+        color: #999;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    td,
+    th {
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    figure,
+    form,
+    blockquote {
+        margin: 0;
+    }
+    
+    ul,
+    ol,
+    li,
+    dl,
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul,
+    ol {
+        list-style: none outside none;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        line-height: 2;
+        font-weight: normal;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    i {
+        font-style: normal;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .clearfix::before,
+    .clearfix::after {
+        content: "";
+        display: table;
+    }
+    
+    .clearfix::after {
+        clear: both;
+    }
+    
+    ins {
+        text-decoration: initial;
+    }
+    
+    a {
+        background: transparent;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    em {
+        font-style: normal;
+    }
+    
+    .clearfix::before,
+    .clearfix::after {
+        content: "";
+        display: table;
+    }
+    
+    .clearfix::after {
+        clear: both;
+    }
+    /* 标识图标 */
+    
+    .betShare {
+        background: url('../../../static/shareFlag.png') no-repeat 50%;
+        background-size: 100%;
+    }
+    
+    .redShare {
+        background: url('../../../static/smallRed.png') no-repeat 50%;
+        background-size: 100%;
+    }
+    
+    .betRecord {
+        background: url('../../../static/betRecord.png') no-repeat 50%;
+        background-size: 100%;
+    }
+    /* 跟投 */
+    
+    .order {
+        border-radius: 6px;
+        background: #fff;
+        padding: 0 8px;
+        position: relative;
+    }
+    
+    .order .lotteryInfo {
+        padding: 8px 0;
+        border-bottom: 1px dashed #d8d8d8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .order .lotteryInfo .floatL {
+        max-width: 128px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    
+    .order .lotteryInfo .floatL .lotteryIcon {
+        display: inline-block;
+        margin-right: 6px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .order .lotteryInfo .floatL .lotteryIcon img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    .order .lotteryInfo .floatL .lotteryIcon div p {
+        display: inline-block;
+        vertical-align: top;
+        color: #0d0d0d;
+        font-size: 14px;
+    }
+    
+    .order .lotteryInfo .floatL .lotteryIcon div .issue {
+        color: #434343;
+        display: block;
+        padding-top: 2px;
+        font-size: 13px;
+    }
+    
+    .order .lotteryInfo .floatR {
+        display: flex;
+        align-items: center;
+    }
+    
+    .order .lotteryInfo .floatR .followBet {
+        background: #e53333;
+        padding: 4px 11px 4px;
+        border-radius: 15px;
+        color: #fff;
+        vertical-align: top;
+        position: relative;
+        top: 0;
+        font-size: 12px;
+    }
+    
+    .order .betInfo {
+        padding: 8px 0;
+        border-radius: 5px;
+    }
+    
+    .order .betInfo p {
+        background: #f6f6f6;
+        padding: 5px 4px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .order .betInfo p .payName {
+        background: #c6c6c6;
+        margin-right: 4px;
+        max-width: 78px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        padding: 0 3px 1px;
+        color: #fff;
+        border-radius: 3px;
+    }
+    
+    .order .betInfo p .big {
+        background: #ff9726;
+        margin: 0 4px;
+        padding: 0 3px;
+        color: #fff;
+        border-radius: 3px;
+    }
+    
+    .order .betInfo p .small {
+        background: #5691d7;
+        margin: 0 4px;
+        padding: 0 3px;
+        color: #fff;
+        border-radius: 3px;
+    }
+    
+    .order .betInfo p .number {
+        display: inline-block;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+        color: #333;
+        margin-left: 4px;
+    }
+    
+    .order .betInfo p .betMoney {
+        display: inline-block;
+        position: absolute;
+        right: 8px;
+        color: #e53333;
+        font-size: 14px;
+    }
+    /* 图片 */
+    
+    .showImgLine {
+        display: block;
+        padding-top: 4px;
+        padding-left: 4px;
+    }
+    
+    .showImgLine img {
+        max-width: 90px;
+        max-height: 90px;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+    }
+    /* 红包 */
+    
+    .graped {
+        opacity: 0.6;
+    }
+    
+    .money {
+        background: #f2812f;
+        position: relative;
+        border-radius: 5px;
+        padding: 8px 0 8px 57px;
+        line-height: 24px;
+        margin: 6px 0 0 3px;
+        font-size: 12px;
+        color: #fff;
+        height: 66px;
+    }
+    
+    .money p {
+        display: inline-block;
+    }
+    
+    .money p:first-of-type {
+        width: 90%;
+        font-size: 14px;
+        overflow: hidden;
+        /*超出部分隐藏*/
+        text-overflow: ellipsis;
+        /* 超出部分显示省略号 */
+        white-space: nowrap;
+        /*规定段落中的文本不进行换行 */
+    }
+    
+    .money p:nth-of-type(2) {
+        position: relative;
+        top: -6px;
+    }
+    /* 盈亏 */
+    
+    .profitloss {
+        background: #fff;
+        padding: 5px 8px;
+        position: relative;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 24px;
+        margin: 6px 0 0 3px;
+        border-radius: 5px;
+        color: #fff;
+    }
+    
+    .profitloss dl {
+        text-align: center;
+        display: inline-block;
+        width: 33%;
+        height: 60px;
+        padding-top: 4px;
+    }
+    
+    .profitloss dl dt {
+        color: #0d0d0d;
+    }
+    
+    .profitloss dl:first-of-type {
+        background: url('../../../static/bet.png') no-repeat 50%;
+        background-size: 100%;
+    }
+    
+    .profitloss dl:nth-of-type(2) {
+        background: url('../../../static/award.png') no-repeat 50%;
+        background-size: 100%;
+        margin: 0 4px;
+    }
+    
+    .profitloss dl:nth-of-type(3) {
+        background: url('../../../static/fyk.png') no-repeat 50%;
+        background-size: 100%;
+    }
+    
+    .noClick {
+        pointer-events: none;
+        opacity: 0.6;
+    }
+    
+    .startChat {
+        opacity: 0;
+    }
+    
+    .redbagOpacity {
+        opacity: 0.6;
+    }
+    
+    .van-overlay {
+        z-index: 99 !important;
+    }
+    /* .kai {
+        transition: All 8s linear;
+        -webkit-transition: All 8s linear;
+        -moz-transition: All 8s linear;
+        -o-transition: All 8s linear;
+    } */
+    /* .kai:hover {
+        transform: rotate(720deg);
+        -webkit-transform: rotate(720deg);
+        -moz-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+    } */
